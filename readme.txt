@@ -11,9 +11,9 @@ Forces all users to login before being able to view your site. Features an optio
 
 Have a private blog that you only want your friends or family to read? Then this plugin is for you. It will redirect all users who aren't logged in to the login form where they are shown a user-friendly message.
 
-This plugin also features a configuration page where you can allow guests to access your feeds, post pingbacks and trackbacks, or for you to access the XML-RPC script from an external blog posting program.
+This plugin also features a configuration page where you can easilly toggle allowing guests to access your feeds.
 
-Unlike other registered users only scripts, you can't get around this one by just visiting `index.php/wp-login.php` nor does it break `wp-cron.php` or anything else.
+Also, unlike some other registered users only scripts, you can't get around this one by just visiting `index.php?blah=wp-login.php` nor does it break `wp-cron.php` or anything else.
 
 == Installation ==
 
