@@ -31,7 +31,9 @@ This should result in the following file structure:
     - plugins
         - registered-users-only
             | registered-users-only.php
-            | readme.txt`
+            | readme.txt
+            | screenshot-1.png
+            | screenshot-2.png`
 
 Then just visit your admin area and activate the plugin.
 
@@ -39,7 +41,9 @@ Then just visit your admin area and activate the plugin.
 
 ###Using The Plugin###
 
-Sit back and relax! You can visit the configurations page at Settings -> Registered Only to optionally set some preferences.
+Just sit back and relax! It will work without you doing anything.
+
+You can however visit the configurations page at Settings -> Registered Only to optionally set some preferences.
 
 == Screenshots ==
 
