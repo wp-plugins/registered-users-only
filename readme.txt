@@ -9,11 +9,13 @@ Forces all users to login before being able to view your site. Features an optio
 
 == Description ==
 
-Have a private blog that you only want your friends or family to read? Then this plugin is for you. It will redirect all users who aren't logged in to the login form where they are shown a user-friendly message.
+Have a private blog that you only want your friends or family to read? Then this plugin may be for you. It will redirect all users who aren't logged in to the login form where they are shown a user-friendly message.
 
 This plugin also features a configuration page where you can easilly toggle allowing guests to access your feeds.
 
 Also, unlike some other registered users only scripts, you can't get around this one by just visiting `index.php?blah=wp-login.php` nor does it break `wp-cron.php` or anything else.
+
+If you need a more advanced plugin, one that redirects to somewhere other than the login form or allows access to your feeds via a unique key (rather than cookies), I suggest [Members Only](http://wordpress.org/extend/plugins/members-only/). If you just need simple guest blocking though, Registered Users Only will work perfectly.
 
 == Installation ==
 
