@@ -5,7 +5,7 @@
 Plugin Name:  Registered Users Only
 Plugin URI:   http://www.viper007bond.com/wordpress-plugins/registered-users-only/
 Description:  Redirects all non-logged in users to your login form. Make sure to <a href="options-general.php?page=registered-users-only">disable registration</a> if you want your blog truely private.
-Version:      1.0.0
+Version:      1.0.1
 Author:       Viper007Bond
 Author URI:   http://www.viper007bond.com/
 
@@ -68,7 +68,7 @@ class RegisteredUsersOnly {
 		if ( 'wp-login.php' != basename($_SERVER['PHP_SELF']) || !empty($_POST) || ( !empty($_GET) && empty($_GET['redirect_to']) ) ) return;
 
 		global $error;
-		$error = __('Only registered and logged in users are allowed to view this site. Please log in now.', 'registered-users-only');
+		$error = __( 'Only registered and logged in users are allowed to view this site. Please log in now.', 'registered-users-only' );
 	}
 
 
@@ -104,35 +104,35 @@ class RegisteredUsersOnly {
 ?>
 
 <div class="wrap">
-	<h2><?php _e('Registered Users Only', 'registered-users-only'); ?></h2>
+	<h2><?php _e( 'Registered Users Only', 'registered-users-only' ); ?></h2>
 
 	<form method="post" action="">
 <?php wp_nonce_field('registered-users-only') ?>
 
 <table class="form-table">
 	<tr valign="top">
-		<th scope="row"><?php _e('Membership'); ?></th>
+		<th scope="row"><?php _e( 'Membership' ); ?></th>
 		<td>
 			<label for="users_can_register">
 				<input name="users_can_register" type="checkbox" id="users_can_register" value="1"<?php checked('1', get_option('users_can_register')); ?> />
-				<?php _e('Anyone can register') ?>
+				<?php _e( 'Anyone can register' ) ?>
 			</label><br />
-			<?php _e('This is a default WordPress option placed here for easy changing.', 'registered-users-only'); ?>
+			<?php _e( 'This is a default WordPress option placed here for easy changing.', 'registered-users-only' ); ?>
 		</td>
 	</tr>
 	<tr valign="top">
-		<th scope="row"><?php _e('Guest Access'); ?></th>
+		<th scope="row"><?php _e( 'Guest Access', 'registered-users-only' ); ?></th>
 		<td>
 			<label for="regusersonly_feeds">
 				<input name="regusersonly_feeds" type="checkbox" id="regusersonly_feeds" value="1"<?php checked('1', $settings['feeds']); ?> />
-				<?php _e('Allow access to your post and comment feeds (Warning: this will reveal all post contents to guests!)'); ?>
+				<?php _e( 'Allow access to your post and comment feeds (Warning: this will reveal all post contents to guests!)', 'registered-users-only' ); ?>
 			</label><br />
 		</td>
 	</tr>
 </table>
 
 <p class="submit">
-	<input type="submit" name="Submit" value="<?php _e('Save Changes') ?>" />
+	<input type="submit" name="Submit" value="<?php _e( 'Save Changes' ) ?>" />
 	<input type="hidden" name="regusersonly_action" value="update" />
 </p>
 </form>

@@ -54,6 +54,10 @@ You can however visit the configurations page at Settings -> Registered Only to 
 
 == ChangeLog ==
 
+**Version 1.0.1**
+
+* Forgot the localizationd domain on some strings. Included the template file while I was at it.
+
 **Version 1.0.0**
 
 * Initial release.
