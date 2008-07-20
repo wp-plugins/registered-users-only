@@ -3,6 +3,7 @@ Contributors: Viper007Bond
 Donate link: http://www.viper007bond.com/donate/
 Tags: restriction, registered only, registration
 Requires at least: 2.0
+Tested up to: 2.6
 Stable tag: trunk
 
 Forces all users to login before being able to view your site. Features an options page for configuration.
@@ -53,6 +54,10 @@ You can however visit the configurations page at Settings -> Registered Only to 
 2. The plugin's options page
 
 == ChangeLog ==
+
+**Version 1.0.2**
+
+* Fix for WordPress 2.6.
 
 **Version 1.0.1**
 

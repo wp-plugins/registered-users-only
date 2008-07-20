@@ -5,7 +5,7 @@
 Plugin Name:  Registered Users Only
 Plugin URI:   http://www.viper007bond.com/wordpress-plugins/registered-users-only/
 Description:  Redirects all non-logged in users to your login form. Make sure to <a href="options-general.php?page=registered-users-only">disable registration</a> if you want your blog truely private.
-Version:      1.0.1
+Version:      1.0.2
 Author:       Viper007Bond
 Author URI:   http://www.viper007bond.com/
 
@@ -39,6 +39,9 @@ class RegisteredUsersOnly {
 
 	// Depending on conditions, run an authentication check
 	function MaybeRedirect() {
+		// If the user is logged in, then abort
+		if ( current_user_can('read') ) return;
+
 		$settings = get_option( 'registered-users-only' );
 
 		// Feeds
@@ -56,7 +59,7 @@ class RegisteredUsersOnly {
 		// If the current script name is in the exclusion list, abort
 		if ( in_array( basename($_SERVER['PHP_SELF']), apply_filters( 'registered-users-only_exclusions', $this->exclusions) ) ) return;
 
-		// If we're still here, then check the user's credentials
+		// Still here? Okay, then redirect to the login form
 		auth_redirect();
 	}
 
