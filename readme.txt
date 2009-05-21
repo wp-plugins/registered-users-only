@@ -54,6 +54,10 @@ You can however visit the configurations page at Settings -> Registered Only to 
 
 == ChangeLog ==
 
+**Version 1.0.3**
+
+* Don't block XML-RPC access so the WordPress iPhone App and others can work.
+
 **Version 1.0.2**
 
 * Fix for WordPress 2.6.
